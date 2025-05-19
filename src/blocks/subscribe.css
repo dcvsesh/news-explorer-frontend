@@ -1,0 +1,158 @@
+.subscribe{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 36px;
+        padding-right: 35px;
+}
+.subscribe_title{
+    font-family: "Roboto-black";
+    font-size: 24px;
+    padding-top: 32px;
+    padding-bottom: 22px;
+    margin: 0;
+}
+
+
+.subscribe__form{
+    display: flex;
+    flex-direction: column;
+}
+  
+.subscribe__form_inputs{
+    margin: 0;
+    font-family: "Inter-regular";
+    color:#2F71E5;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 9px;
+}
+
+.input__text{
+    font-family: "Inter-regular";
+    font-size: 14px;
+    margin-bottom: 31px;
+    padding-bottom: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 1px;
+}
+ 
+.subscibe_login_link{
+    font-family: "Inter-regular";
+    font-size: 14px;
+    margin: 0;
+}
+
+.login_link{
+    font-family: "Inter-regular";
+    font-size: 14px;
+    color: #2F71E5;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 28px;
+    cursor: pointer;
+  }
+
+.subscribe__buttons{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+}
+
+.subscribe_button{
+    background-color: #2F71E5;
+    font-size: 18px;
+    font-family: "Roboto-medium";
+    color: white;
+    width: 360px;
+    height: 64px;
+    border-radius: 50px;
+    border: none;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.subscribe_button_inactive {
+    background-color: #E6E8EB;
+    cursor: default;
+    color: #B6BCBF;
+    border-color: #cccccc;
+    box-shadow: none;
+  }
+
+
+  .form__input-error {
+    margin-top: 52px;
+    position: absolute;
+    font-family: "Inter-regular";
+    font-size: 12px;
+    color: red;
+    opacity: 0;
+    transition: 0.3s;
+   width: 359px;
+   text-align: start;
+  }
+  
+  .form__input-error_active {
+    opacity: 1;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 590px) {
+   
+    .subscribe {
+      padding: 0 16px;
+      width: 100%;
+      box-sizing: border-box;
+      align-items: flex-start;
+    }
+    
+    .subscribe_title {
+      padding-top: 16px;
+      padding-bottom: 18px;
+      font-size: 24px;
+    }
+    
+    .subscribe__form{
+      width: 100%;
+    }
+    
+    .subscribe__form_inputs {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    
+    .input__text {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    
+    .subscribe_button,
+    .subscribe_button_inactive {
+      width: 100%;
+      max-width: none;
+      height: 64px;
+      border-radius: 100px;
+    }
+    
+    .subscribe__buttons {
+      width: 100%;
+    }
+    
+    .form__input-error {
+      width: 100%;
+    }
+      }

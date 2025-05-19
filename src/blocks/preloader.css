@@ -1,0 +1,29 @@
+.preloader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupa toda la altura de la pantalla */
+    overflow: hidden;
+    background-color: #F5F6F7;
+  }
+  
+  .circle-preloader {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      rgba(26, 27, 34, 1) 0%,
+      rgba(209, 210, 214, 0) 100%
+    );
+    animation: spin 0.75s infinite linear;
+    /* Máscara para hacer visible solo el anillo exterior */
+    mask-image: radial-gradient(circle, transparent 65%, black 50%);
+    -webkit-mask-image: radial-gradient(circle, transparent 65%, black 50%);
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
